@@ -5,10 +5,12 @@ import hashlib
 from datetime import datetime
 from flask_cors import CORS
 
-CORS(app)
+
 
 
 app = Flask(__name__)
+
+CORS(app)
 
 # Define the path to the CSV file
 csv_file_path = os.path.expanduser('OurData.csv')
